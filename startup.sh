@@ -20,6 +20,6 @@ chmod +x /root/cloudflared
 # /usr/bin/v2ray -config /root/config.json & /root/cloudflared tunnel --no-autoupdate run --token $TUNNEL_TOKEN & nginx -c /root/nginx.conf -g 'daemon off;'
 v2ray -config /root/config.json & caddy run --config /root/Caddyfile & /root/cloudflared tunnel --no-autoupdate run --token $TUNNEL_TOKEN --protocol http2
 else
-v2ray -config /root/config.json & caddy run --config /root/Caddyfile
+v2ray -config /root/config.json
 fi
 
