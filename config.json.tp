@@ -32,11 +32,11 @@
                 "decryption": "none"
             },
             "streamSettings": {
-                "network": "http",
+                "network": "$NETWORK",
                 "security": "none",
                 "httpSettings": {
                     "path": "/h2",
-                    "host": ["h2-dcnjerf7xq-df.a.run.app"]
+                    "host": ["$HOST"]
                 }
             }
         }
