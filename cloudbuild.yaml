@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'public.ecr.aws/e5j6k0u9/v2ray-service:latest', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'public.ecr.aws/e5j6k0u9/v2ray-service:latest']
