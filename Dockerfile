@@ -9,5 +9,5 @@ COPY config.json.tp /root/
 ADD startup.sh /startup.sh
 RUN chmod +x /startup.sh
 
-CMD /startup.sh
+ENTRYPOINT /startup.sh
 
